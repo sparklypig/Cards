@@ -1,8 +1,5 @@
 import * as agl from 'ascii-graphics-library'
 
-import rl from 'readline-sync'
-import blessed from 'blessed'
-
 function leftPad(str, len) {
     let ret = str
     if(ret.length < len) {
