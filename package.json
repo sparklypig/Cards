@@ -1,18 +1,23 @@
 {
   "name": "cards",
   "version": "1.0.0",
-  "description": "",
-  "main": "Cards.js",
+  "description": "Welcome to solitaire!\r run 'node Solitaire.js' to play",
+  "main": "Card.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparklypig/Solitaire.git"
+  },
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "bugs": {
+    "url": "https://github.com/sparklypig/Solitaire/issues"
+  },
+  "homepage": "https://github.com/sparklypig/Solitaire#readme",
   "dependencies": {
-    "ascii-graphics-library": "github:sparklypig/ASCII-Graphics-Library",
-    "blessed": "^0.1.81",
-    "RawControl": "github:sparklypig/RawControl",
-    "readline-sync": "^1.4.10"
-  }
+    "ascii-graphics-library": "github:sparklypig/ASCII-Graphics-Library"
+  },
+  "type": "module"
 }
