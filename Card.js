@@ -10,6 +10,7 @@ function leftPad(str, len) {
     }
     return ret
 }
+
 function rightPad(str, len) {
     let ret = str
     if(ret.length < len) {
@@ -382,11 +383,16 @@ export class CardStack extends CardGroup{
     }
 
     validTop(other) {
-        if(this.top()) {
-            return other.value + 1 === this.top().value && other.color !== this.top().color
+        if(other) {
+            if(this.top()) {
+                return other.value + 1 === this.top().value && other.color !== this.top().color
+            }
+            else {
+                return other.value === 13
+            }
         }
         else {
-            return other.value === 13
+            return false
         }
     }
 
