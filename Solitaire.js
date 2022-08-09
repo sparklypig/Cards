@@ -1,6 +1,6 @@
 import * as Card from './Card.js'
-import rawControl from '../../RawControl/rawControl.js'
-import * as agl from '../../ASCII Graphics Library/agl.js'
+import rawControl from 'RawControl'
+import * as agl from 'ascii-graphics-library'
 
 class Board {
     constructor() {

@@ -10,7 +10,9 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "ascii-graphics-library": "github:sparklypig/ASCII-Graphics-Library",
     "blessed": "^0.1.81",
+    "RawControl": "github:sparklypig/RawControl",
     "readline-sync": "^1.4.10"
   }
 }
