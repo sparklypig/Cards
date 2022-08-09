@@ -1,4 +1,4 @@
-import * as agl from '../../ASCII Graphics Library/agl.js'
+import * as agl from 'ascii-graphics-library'
 
 import rl from 'readline-sync'
 import blessed from 'blessed'
