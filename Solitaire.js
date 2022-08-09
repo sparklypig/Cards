@@ -1,6 +1,20 @@
 import * as Card from './Card.js'
 import rawControl from 'RawControl'
 import * as agl from 'ascii-graphics-library'
+import process from 'process'
+import * as rl from 'readline-sync'
+import fs from 'fs'
+
+if(fs.existsSync('.help')) {
+    console.log("Welcome to solitare!")
+    console.log("Navigate with the arrow keys, and select with 'enter'")
+    console.log("Use 1-7 to select piles, and shift + 1-4  to select foundations")
+    console.log("Use space to select the stock and press again to deal new cards")
+    console.log("Press 'ctrl+c' to quit")
+    console.log("Remove the '.help' file to not see this message")
+    
+    rl.question("Press enter to continue")
+}
 
 class Board {
     constructor() {
@@ -299,4 +313,4 @@ function display() {
 console.log(agl.constants.CLEARSCREEN())
 display()
 
-rawControl(controls, true, display)
+rawControl(controls, false, display)
