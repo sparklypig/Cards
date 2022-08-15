@@ -554,6 +554,7 @@ export class Stock {
         
         let tempStack = new CardStack()
         tempStack.group = this.waste.group.slice(-9)
+        tempStack.setEdgeHighlight(this.edgeHighlight)
         tempStack.selected = this.waste.selected
 
         ret += tempStack.toString()
