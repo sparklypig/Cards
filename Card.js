@@ -412,6 +412,7 @@ export class CardStack extends CardGroup{
         if(this.group.length == 0) {
             let card = new Card('', ' ', true)
             card.selected = this.selected > 0
+            card.edgeHighlight = this.edgeHighlight
             ret += card.toString()
         }
 
