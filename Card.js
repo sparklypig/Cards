@@ -281,6 +281,7 @@ export class Foundation extends CardGroup {
 
     validMove(depth, dest) {
         let card = this.group[this.group.length - depth]
+        console.log("Foundation.validMove(): card:", card)
         return dest.validTop(card)
     }
 
