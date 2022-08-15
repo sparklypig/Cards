@@ -299,6 +299,7 @@ export class Foundation extends CardGroup {
         if(this.group.length == 0) {
             let card = new Card('', this.suit, true)
             card.selected = this.selected
+            card.edgeHighlight = this.edgeHighlight
             ret += card.toString()
         }
         else {
