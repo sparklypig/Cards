@@ -241,9 +241,10 @@ export class CardGroup {
         }
     }
 
-    setEdgeHighlight(edgeHighlight) {
+    setEdgeHighlight(_edgeHighlight) {
+        this.edgeHighlight = _edgeHighlight
         for(let card of this.group) {
-            card.edgeHighlight = edgeHighlight
+            card.edgeHighlight = this.edgeHighlight
         }
     }
 
